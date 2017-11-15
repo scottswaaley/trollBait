@@ -1,0 +1,11 @@
+extends layout
+ 
+block content
+  h1= title
+  p Welcome to being Scott ...
+  form(method='post', enctype='multipart/form-data')
+    input(type='file', name='imageupload')
+    div
+      input(type='text', name='caption')
+    div
+      input(type='submit', name='uploadimage', value='Submit')
